@@ -29,13 +29,9 @@ class CustomTabBarViewController: UITabBarController {
     }
     
     private func setDesignTabBar(_ title: String) {
-        if #available(iOS 13.0, *) {
-            let image = UIImage(systemName: "person")
-            let tabBarItem = UITabBarItem(title: title, image: image, tag: 3)
-            viewControllers?[3].tabBarItem = tabBarItem
-        } else {
-            // Fallback on earlier versions
-        }
+        let image = UIImage(systemName: "person")
+        let tabBarItem = UITabBarItem(title: title, image: image, tag: 3)
+        viewControllers?[3].tabBarItem = tabBarItem
         
     }
     

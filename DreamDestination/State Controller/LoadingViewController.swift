@@ -11,7 +11,7 @@ import UIKit
 class LoadingViewController: UIViewController {
     // MARK: Property
     private lazy var activityIndicator = UIActivityIndicatorView(
-        style: .whiteLarge
+        style: .large
     )
 
     // MARK: Lifecycle
