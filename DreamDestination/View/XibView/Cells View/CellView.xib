@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="RSF-JV-lCa" customClass="CellView" customModule="DreamDestination" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="485" height="143"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RSF-JV-lCa" id="fcV-6k-40B">
+                <rect key="frame" x="0.0" y="0.0" width="485" height="143"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kDg-rg-6ub">
+                        <rect key="frame" x="0.0" y="0.0" width="485" height="143"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZj-QZ-DsM">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="143"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeImageView" translatesAutoresizingMaskIntoConstraints="NO" id="J8E-sK-jnn" customClass="CustomImageView" customModule="DreamDestination" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="220" height="123"/>
+                                    </imageView>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="roX-E3-ITr">
+                                        <rect key="frame" x="101.5" y="53" width="37" height="37"/>
+                                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="roX-E3-ITr" firstAttribute="centerX" secondItem="J8E-sK-jnn" secondAttribute="centerX" id="1Dd-JJ-wGW"/>
+                                    <constraint firstItem="J8E-sK-jnn" firstAttribute="leading" secondItem="LZj-QZ-DsM" secondAttribute="leading" constant="10" id="HME-TY-AsZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="J8E-sK-jnn" secondAttribute="bottom" constant="10" id="NSu-6E-Wcz"/>
+                                    <constraint firstItem="J8E-sK-jnn" firstAttribute="top" secondItem="LZj-QZ-DsM" secondAttribute="top" constant="10" id="S5N-RR-tGl"/>
+                                    <constraint firstAttribute="trailing" secondItem="J8E-sK-jnn" secondAttribute="trailing" constant="10" id="eGf-uE-E2g"/>
+                                    <constraint firstItem="roX-E3-ITr" firstAttribute="centerY" secondItem="J8E-sK-jnn" secondAttribute="centerY" id="o7i-56-Yvb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yVW-wR-Fks">
+                                <rect key="frame" x="245" y="0.0" width="240" height="143"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Jk7-AY-p3B">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="143"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bretagne" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrS-4Z-bAc">
+                                                <rect key="frame" x="0.0" y="0.0" width="230" height="71.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="19"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35 activités/lieux à découvrir" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYH-yE-ThJ">
+                                                <rect key="frame" x="0.0" y="71.5" width="230" height="71.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Jk7-AY-p3B" secondAttribute="trailing" constant="10" id="1fF-Ec-cSl"/>
+                                    <constraint firstItem="Jk7-AY-p3B" firstAttribute="top" secondItem="yVW-wR-Fks" secondAttribute="top" id="fAR-Cq-rZ7"/>
+                                    <constraint firstItem="Jk7-AY-p3B" firstAttribute="leading" secondItem="yVW-wR-Fks" secondAttribute="leading" id="llE-u0-BFo"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jk7-AY-p3B" secondAttribute="bottom" id="uZ9-PI-gdA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kDg-rg-6ub" firstAttribute="leading" secondItem="fcV-6k-40B" secondAttribute="leading" id="USm-K1-IUg"/>
+                    <constraint firstAttribute="trailing" secondItem="kDg-rg-6ub" secondAttribute="trailing" id="W4i-V7-VJk"/>
+                    <constraint firstAttribute="bottom" secondItem="kDg-rg-6ub" secondAttribute="bottom" id="gn6-V1-h9g"/>
+                    <constraint firstItem="kDg-rg-6ub" firstAttribute="top" secondItem="fcV-6k-40B" secondAttribute="top" id="z0i-VF-6Ip"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="activityIndicator" destination="roX-E3-ITr" id="nIW-AN-TiF"/>
+                <outlet property="activityLabel" destination="gYH-yE-ThJ" id="OpS-Vv-sNZ"/>
+                <outlet property="cityImage" destination="J8E-sK-jnn" id="YtO-0J-nTb"/>
+                <outlet property="cityName" destination="NrS-4Z-bAc" id="WlJ-Pq-v6l"/>
+                <outlet property="stackView" destination="Jk7-AY-p3B" id="TRp-3f-i08"/>
+            </connections>
+            <point key="canvasLocation" x="96.5625" y="-27.992957746478872"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="homeImageView" width="2500" height="1669"/>
+    </resources>
+</document>

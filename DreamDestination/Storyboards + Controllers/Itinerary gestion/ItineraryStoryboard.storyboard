@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3WU-kE-FvM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Itinéraire-->
+        <scene sceneID="R3s-RY-89D">
+            <objects>
+                <navigationController id="3WU-kE-FvM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Itinéraire" image="airplane" catalog="system" id="uzk-yU-SbK"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Gsq-IE-aBf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Zcw-Ue-aL5" kind="relationship" relationship="rootViewController" id="veF-AQ-kqF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FXd-pf-AVO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-483" y="678"/>
+        </scene>
+        <!--Formulaire d'itinéraire-->
+        <scene sceneID="U2p-dT-FJm">
+            <objects>
+                <viewController id="Zcw-Ue-aL5" customClass="ItineraryViewController" customModule="DreamDestination" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X0N-dT-ytM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UqI-Bo-d3l">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ItineraryCell" id="Vsz-Vk-uD5" customClass="ItineraryCell" customModule="DreamDestination" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vsz-Vk-uD5" id="ron-mH-wUh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="8Al-by-YJJ">
+                                                    <rect key="frame" x="10" y="0.0" width="394" height="80"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination (Ville/Etat/Région) :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfP-hb-U5k">
+                                                            <rect key="frame" x="0.0" y="0.0" width="394" height="46"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                                            <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ex: France, Côte d'azur" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8KC-GL-XqO" customClass="CustomItineraryTextField" customModule="DreamDestination" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="46" width="394" height="34"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <gestureRecognizers/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="bLF-H5-udz"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <gestureRecognizers/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="8Al-by-YJJ" secondAttribute="trailing" constant="10" id="0lr-l8-iqp"/>
+                                                <constraint firstItem="8Al-by-YJJ" firstAttribute="leading" secondItem="ron-mH-wUh" secondAttribute="leading" constant="10" id="SVD-ZF-nh9"/>
+                                                <constraint firstItem="8Al-by-YJJ" firstAttribute="top" secondItem="ron-mH-wUh" secondAttribute="top" id="kNP-E7-wVN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="SfP-hb-U5k" id="njW-p3-4fX"/>
+                                            <outlet property="textField" destination="8KC-GL-XqO" id="2dV-lh-3cZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Zcw-Ue-aL5" id="i6e-jW-hRe"/>
+                                    <outlet property="delegate" destination="Zcw-Ue-aL5" id="J0p-0A-ryO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="UqI-Bo-d3l" firstAttribute="bottom" secondItem="XLy-IA-2Jz" secondAttribute="bottom" id="1Mf-QI-ya2"/>
+                            <constraint firstItem="UqI-Bo-d3l" firstAttribute="trailing" secondItem="XLy-IA-2Jz" secondAttribute="trailing" id="6pC-cj-d84"/>
+                            <constraint firstItem="UqI-Bo-d3l" firstAttribute="leading" secondItem="XLy-IA-2Jz" secondAttribute="leading" id="lRA-ws-q1S"/>
+                            <constraint firstItem="UqI-Bo-d3l" firstAttribute="top" secondItem="XLy-IA-2Jz" secondAttribute="top" id="zii-PT-x5h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XLy-IA-2Jz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Formulaire d'itinéraire" id="fwb-tF-gz8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQ8-g9-Ftg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447.82608695652175" y="677.67857142857144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="airplane" catalog="system" width="128" height="115"/>
+    </resources>
+</document>

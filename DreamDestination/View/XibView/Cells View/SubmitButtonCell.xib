@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="88" id="Zli-mZ-tRt" userLabel="SubmitButtonCell" customClass="SubmitButtonCell" customModule="DreamDestination" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zli-mZ-tRt" id="ltG-Km-ZaV">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pu-Lm-fTi" customClass="CustomButton" customModule="DreamDestination" customModuleProvider="target">
+                        <rect key="frame" x="20" y="25" width="283" height="62"/>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                        <state key="normal" title="Soumettre le formulaire">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3pu-Lm-fTi" secondAttribute="bottom" constant="25" id="4K7-cq-VQt"/>
+                    <constraint firstItem="3pu-Lm-fTi" firstAttribute="top" secondItem="ltG-Km-ZaV" secondAttribute="top" constant="25" id="8a0-2h-saX"/>
+                    <constraint firstAttribute="trailing" secondItem="3pu-Lm-fTi" secondAttribute="trailing" constant="20" id="Kt4-7q-MjJ"/>
+                    <constraint firstItem="3pu-Lm-fTi" firstAttribute="leading" secondItem="ltG-Km-ZaV" secondAttribute="leading" constant="20" id="jwx-m6-Vwb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="submitButton" destination="3pu-Lm-fTi" id="fCB-Hr-Yck"/>
+            </connections>
+            <point key="canvasLocation" x="209.42028985507247" y="108.48214285714285"/>
+        </tableViewCell>
+    </objects>
+</document>
