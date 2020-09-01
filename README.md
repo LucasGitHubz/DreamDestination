@@ -14,22 +14,6 @@
 
 * Language: French(only)
 
-## Installation
-
-First step:
-
-```bash
-Fork the project
-```
-
-Next step:
-
-```bash
-Git clone on your computer/laptop
-```
-
-Don't forget to add your own info.plist and GoogleService-info.plist in the DreamDestination source file (which contains AppDelegate).
-
 ## Author
 
 Lucas Amelin, lucasamelin14@gmail.com
